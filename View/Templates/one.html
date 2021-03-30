@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+    body{
+    margin:0;
+    padding:0;
+    background: #262626;
+    font-family: sans-serif; }
+.container{
+    width: 1380px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;}
+.container .box{
+position: relative;
+width: 300px;
+height: 300px;
+background: #ff0;
+margin: 10px;
+box-sizing: border-box;
+display: inline-block;}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;}
+.container .box .imgBox img{
+max-width: 100%;
+transition: transform 2s;}
+.container .box:hover .imgBox img{
+    transform: scale(1.2);}
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;}
+.container .box:hover .details{
+    transform: scaleY(1); }
+.container .box .details .content {
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color: #fff;}
+.container .box .details .content h2 {
+margin: 0;
+padding: 0;
+font-size: 20px;
+color: #ff0;}
+.container .box .details .content p{
+margin: 10px 0 0 ;
+padding: 0;}
+    </style>
+    
+    <body>
+        <div class="container">
+                <div class="well well-lg" style="color:red; font-size:3vw; background-color:bisque; width:100%;"><center><b>These apples seems 1-3 days old<br/>Here are some recommendations to use them</b></center></div>    
+        </div>    
+    
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="static/images/AppleChips.jpg" height="300px" alt="Bake them into chips">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Bake them into chips</h2>
+                     <p>For a healthier alternative to the potato variety, try out this recipe for homemade apple chips.</p>
+                </div> </div>
+            </div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/AppleJam.jpg" height="300px" alt="Mush them into jam">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Mush them into jam</h2>
+                     <p>  
+                        Jam recipes usually call for a lot of sugar, but what sets this homemade jam apart from the store-bought stuff 
+                        is that it’s made with fresh fruit and contains no preservatives.
+                    </p>
+                </div> </div></div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/AppleJuice.jpg" height="300px" alt="Make apple juice">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Make apple juice</h2>
+                     <p>The homemade, unfiltered, unsweetened variety retains all the good stuff and adds nothing bad.</p>
+                </div> </div></div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/AppleSalad.jpg" height="300px" alt="Add them to salads">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Add them to salads</h2>
+                     <p>
+                        Apples brighten up any salad and add some juicy crunch to those greens. 
+                        For a salad that’ll keep you full, check out this apple, pecan, and bleu cheese salad recipe.
+                    </p>
+                </div> </div></div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/AppleSauce.jpg" height="300px" alt="Make applesauce">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Make applesauce</h2>
+                     <p>
+                        The childhood classic is fairly easy to make healthy (as long as you don’t dump a ton of sugar in there) 
+                        and can use up a whole bunch of apples in one go. Bonus: Use the sauce to make an applesauce cake.
+                    </p>
+                </div> </div></div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/Stewed.jpg" height="300px" alt="Stew them">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Stew them</h2>
+                     <p>
+                        Pair the stewed apples from this recipe with whole-grain waffles or toast, some plain yogurt 
+                        (the apples will provide enough sweetness!), or oatmeal for a snazzy, vitamin-packed addition to breakfast.
+                    </p>
+                </div> </div></div>
+            <div class="box"><div class="imgBox">
+                    <img src="static/images/Baked.jpg" height="300px" alt="Bake them">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Bake them</h2>
+                     <p>
+                        Eat them on their own, sprinkled with cinnamon, or on top of a bowl of cereal or oatmeal 
+                        for a healthy breakfast, snack, or dessert. Better yet, bake them with breakfast inside.
+                    </p>
+                </div> </div></div>
+                <div class="box"><div class="imgBox">
+                    <img src="static/images/AppleVodka.jpg" height="300px" alt="Infuse some vodka">
+                </div>
+                <div class="details">
+                    <div class="content">
+                    <h2>Infuse some vodka</h2>
+                     <p>It sounds fancy, but it’s really easy. Just chop up some apples, pour vodka over them, and let the mixture sit around for a few days or a couple weeks.</p>
+                </div> </div></div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+ body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  font-family: sans-serif;
+ }
+
+ .container {
+  width: 1380px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+ .container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #ff0;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+ }
+
+ .container .box .imgBox {
+  position: relative;
+  overflow: hidden;
+ }
+
+ .container .box .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+ }
+
+ .container .box:hover .imgBox img {
+  transform: scale(1.2);
+ }
+
+ .container .box .details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, .8);
+  transform: scaleY(0);
+  transition: transform .5s;
+ }
+
+ .container .box:hover .details {
+  transform: scaleY(1);
+ }
+
+ .container .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+ }
+
+ .container .box .details .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ff0;
+ }
+
+ .container .box .details .content p {
+  margin: 10px 0 0;
+  padding: 0;
+ }
+</style>
+
+<body>
+ <div class="container">
+  <div class="well well-lg" style="color:red; font-size:3vw; background-color:bisque; width:100%;">
+   <center><b>These apples seems 4-5 days old<br />Here are some recommendations to use them</b></center>
+  </div>
+ </div>
+
+ <div class="container">
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/CandleHolder.jpg" height="300px" alt="Candle Holder">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Hold candles</h2>
+     <p>Fill a boring Saturday and pretty up a home with these homemade apple candle holders.</p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/ExtraSalt.jpg" height="300px" alt="Suck Extra Salt">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Suck up extra salt</h2>
+     <p>
+      If you’ve sweated over a soup or sauce only to discover you added too much salt, don’t fret!
+      Just toss a few apple slices into the pot, stir, and remove before serving—they’ll absorb the extra salt.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/RipenFruits.jpg" height="300px" alt="Ripen other fruits">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Ripen other fruits</h2>
+     <p>
+      The ethylene gas emitted by apples can help avocados, bananas, and other fruits ripen more quickly,
+      so plop an apple in the fruit basket next to these other fruits next time you don’t feel like waiting five days to
+      make guacamole.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/BakedGoods.jpg" height="300px" alt="Keep baked goods moist">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Keep baked goods moist</h2>
+     <p>
+      Plop a cake or other baked goods into an airtight container with half an apple.
+      They’ll stay fresh longer thanks to the apple’s moisture.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/FacePack.jpg" height="300px" alt="Give yourself a facial">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Give yourself a facial</h2>
+     <p>
+      Apply apples’ health powers to your face with an apple and honey face mask.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/HeadAche.jpg" height="300px" alt="Nip a headache in the bud">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Nip a headache in the bud</h2>
+     <p>
+      Studies have found that smelling a green apple can reduce the intensity of a migraine and help it end sooner.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="imgBox">
+    <img src="static/images/BirdFeeder.jpg" height="300px" alt="Make a bird feeder">
+   </div>
+   <div class="details">
+    <div class="content">
+     <h2>Make a bird feeder</h2>
+     <p>
+      Make a Mother-Earth-friendly birdfeeder from completely biodegradable (and bird-safe) materials. Or, if not
+      feeling particularly crafty,
+      just toss the fruits out into the yard and let the animals do the work themselves.
+     </p>
+    </div>
+   </div>
+  </div>
+
+
+ </div>
+</body>
+
+</html>
